@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div id="circle"></div>
+        <div id="calculator">
+            <div id="screen">
+                <div id="opr"><h2>0</h2></div>
+                <div id="entry"><h1>0</h1></div>
+            </div>
+            <div id="buttons">
+                <div id="other">
+                    <button id="allclear" onclick="window.location.reload(true)"><h2>AC</h2></button>
+                    <button id="zero" value="0" onclick="dis(0)"><h2>0</h2></button>
+                    <button  onclick="back()"><img src="backspace.png" style="width: 60%; height:90%"></button>
+                </div>
+                <div id="operations">
+                    <button onclick="op('/')"><h3>/</h3></button>
+                    <button onclick="op('*')"><h3>*</h3></button>
+                    <button onclick="op('+')"><h3>+</h3></button>
+                    <button onclick="op('-')"><h3>-</h3></button>
+                    <button style="height: 60px; background-color:rgb(184, 128, 240)" onclick="equals()"><h3>=</h3></button>
+                </div>
+                
+                <div id="numbers">
+                    <button id="nine" value="9" onclick="dis(9)"><h4>9</h4></button>
+                    <button id="eight" value="8" onclick="dis(8)"><h4>8</h4></button>
+                    <button id="seven" value="7" onclick="dis(7)"><h4>7</h4></button>
+                    <button id="six" value="6" onclick="dis(6)"><h4>6</h4></button>
+                    <button id="five" value="5" onclick="dis(5)"><h4>5</h4></button>
+                    <button id="four" value="4" onclick="dis(4)"><h4>4</h4></button>
+                    <button id="three" value="3" onclick="dis(3)"><h4>3</h4></button>
+                    <button id="two" value="2"onclick="dis(2)"><h4>2</h4></button>
+                    <button id="one" value="1" onclick="dis(1)"><h4>1</h4></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
